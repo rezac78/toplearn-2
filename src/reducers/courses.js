@@ -1,9 +1,8 @@
-export const coursesReducer = (state = [], action) => {
-    switch (action.type) {
-        case "INIT":
-            return [...action.payload];
-
+export const coursesReducers=(state={},action)=>{
+    switch(action.type){
+        case "GET_COURSE":
+            return {...action.payload};
         default:
             return state;
     }
-};
+}

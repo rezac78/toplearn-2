@@ -1,10 +1,10 @@
-export const userReducer = (state = {}, action) => {
+export const userReducers = (state = {}, action) => {
     switch (action.type) {
         case "SET_USER":
-            return { ...action.payload }; //spread Operator
+            return { ...action.payload };
         case "CLEAR_USER":
             return { ...action.payload };
         default:
             return state;
     }
-};
+}
