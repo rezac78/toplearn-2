@@ -8,8 +8,10 @@ import Register from "./../components/Register/Register";
 import Archive from "./../components/Course/Archive";
 import SingleCourse from "./../components/Course/SingleCourse";
 import UserProfile from "./../components/Profile/UserProfile";
+import { useSelector } from "react-redux";
 
 const Toplearn = props => {
+    const courses = useSelector(state => state.courses);
     return (
         <MainLayout>
             <Switch>
